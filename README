@@ -1,0 +1,25 @@
+todo-list
+=======================
+
+This is just a pet project of mine in Ruby. That's because this is my
+first large-scale project in Ruby! This project can be used to maintain a 
+console based todo list for you.
+
+Assuming your current directory is "src", you can run this by issuing the following:
+
+> ruby main.rb
+
+this is more or less like the shell where in you can enter commands like the following
+
+list                 list all | [category_name]
+add                  add "task_name" ["category_name"]
+mark                 mark task_id
+unmark               unmark task_id
+delete               delete task_id
+
+[..] implies that this parameter is optional. task_id is an integer that is listed
+when you issue the "list" command. Thus, this is like interpreter run by an interpreter :)
+
+author: karthik ananthapadmanaban
+website: http://thekfactor.info
+blog: http://blog.thekfactor.info

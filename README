@@ -21,8 +21,8 @@ delete               delete task_id
 when you issue the "list" command. Thus, this is like an interpreter ran by an interpreter :)
 
 A quick note about tests - these tests were created using netbeans ide 6.9.1.
-It should work in netbeans ide without any change. So in case you are trying
-to run the tests using ruby command line, you may have to do some changes. The
+It should work in netbeans ide without any change. So in case you are trying to
+run the tests using ruby command line, you may have to do some changes. The
 source files should work just as-is. i.e. after copying to a folder say
 "todo-list", you should be able to go to the directory where you have
 main.rb and execute it using the command above.

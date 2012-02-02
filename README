@@ -3,13 +3,13 @@ todo-list
 
 This is just a pet project of mine in Ruby. That's because this is my
 first large-scale project in Ruby! This project can be used to maintain a 
-console based todo list for you.
+console based to-do list for you.
 
 Assuming your current directory is "src", you can run this by issuing the following:
 
 > ruby main.rb
 
-this is more or less like the shell where in you can enter commands like the following
+This is more or less like the shell where in you can enter commands like the following
 
 list                 list all | [category_name]
 add                  add "task_name" ["category_name"]
@@ -20,6 +20,12 @@ delete               delete task_id
 [..] implies that this parameter is optional. task_id is an integer that is listed
 when you issue the "list" command. Thus, this is like an interpreter ran by an interpreter :)
 
-author: karthik ananthapadmanaban
-website: http://thekfactor.info
-blog: http://blog.thekfactor.info
+A quick note about tests - these tests were created using netbeans ide 6.9.1. It should work in
+netbeans ide without any change. So in case you are trying to run the tests using ruby command line,
+you may have to do some changes. The source files should work just as-is. i.e. after copying to a
+folder say "todo-list", you should be able to go to the directory where you have main.rb and execute
+it using the command above.
+
+Author: karthik ananthapadmanaban
+Website: http://thekfactor.info
+Blog: http://blog.thekfactor.info

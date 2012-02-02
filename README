@@ -18,7 +18,7 @@ unmark               unmark task_id
 delete               delete task_id
 
 [..] implies that this parameter is optional. task_id is an integer that is listed
-when you issue the "list" command. Thus, this is like interpreter run by an interpreter :)
+when you issue the "list" command. Thus, this is like an interpreter ran by an interpreter :)
 
 author: karthik ananthapadmanaban
 website: http://thekfactor.info

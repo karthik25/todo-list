@@ -11,7 +11,7 @@ class HelpTask < TaskBase
   end
 
   def has_valid_params
-    @props.length == 0
+    @props == nil
   end
 
   def execute

@@ -1,11 +1,12 @@
-todo-list
+to-do list
 =======================
 
 This is just a pet project of mine in Ruby. That's because this is my
-first large-scale project in Ruby! This project can be used to maintain a 
-console based to-do list for you.
+first large-scale project in Ruby! This project can be used to maintain a
+to-do list, which is managed using a console based application.
 
-Assuming your current directory is "src", you can run this by issuing the following:
+Assuming your current directory is "lib", you can run the application by
+issuing the following command:
 
 > ruby main.rb
 
@@ -15,7 +16,7 @@ list                 list all | [category_name]
 add                  add "task_name" ["category_name"]
 mark                 mark task_id
 unmark               unmark task_id
-delete               delete task_id
+delete               delete [task_id]
 
 [..] implies that this parameter is optional. task_id is an integer that is listed
 when you issue the "list" command. Thus, this is like an interpreter ran by an interpreter :)

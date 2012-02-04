@@ -34,6 +34,11 @@ class TextListManager
       @task_items << task
     end
 
+    def delete_tasks
+      @task_items = []
+      true
+    end
+
     def delete_task(id)
       status = false
       

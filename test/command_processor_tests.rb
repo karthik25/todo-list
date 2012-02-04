@@ -36,7 +36,7 @@ class CommandProcessorTests
     status = params[0] == '2'
     print_test_result("can generate delete task type with id param", status)
   end
-
+  
   def can_generate_a_mark_task
     command = 'mark 2'
     processor = Commandprocessor.new(nil)
@@ -93,6 +93,14 @@ class CommandProcessorTests
     print_test_result("can generate a list task with prop as cat1", status)
   end
 
+  def can_identify_invalid_type
+    command = '\'sometype'
+    processor = Commandprocessor.new(nil)
+    executable_command = processor.get_command(command)
+    status = executable_command == nil
+    print_test_result("can identify a nil type", status)
+  end
+
   private
   def print_test_result(msg, status)
     puts("Test: #{msg} - Status: #{status}")
@@ -112,3 +120,4 @@ cmdproc.can_generate_unmark_task_with_params
 cmdproc.can_generate_a_list_task_default
 cmdproc.can_generate_a_list_task_with_props
 cmdproc.can_generate_a_list_task_with_props_type2
+cmdproc.can_identify_invalid_type

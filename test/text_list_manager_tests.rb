@@ -16,19 +16,19 @@ class TextListManagerTests
 
     item = @manager.get_task_by_id(1)
     status = item.gettaskname == "task 1"
-    print_test_result("has a task a with id 1 and name task 1", status)
+    print_test_result("has a task with id 1 and name task 1", status)
  end
 
   def test_get_one_item
     item = @manager.get_task_by_id(3)
     status = item.gettaskname == "task 3"
-    print_test_result("has a task a with id 3 and name task 3", status)
+    print_test_result("has a task with id 3 and name task 3", status)
   end
 
   def test_if_cat1_has_2_items
     items = @manager.by_category("cat1")
     status = items.length == 2
-    print_test_result("has 2 task with category as cat1", status)
+    print_test_result("has 2 tasks with category as cat1", status)
   end
 
   def can_add_a_task

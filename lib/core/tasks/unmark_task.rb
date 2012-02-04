@@ -9,7 +9,7 @@ class UnmarkTask < TaskBase
   end
 
   def has_valid_params
-    @props.length == 1
+    @props != nil && @props.length == 1
   end
 
   def execute

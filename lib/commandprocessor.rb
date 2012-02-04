@@ -28,14 +28,18 @@ class Commandprocessor
   private
   def get_props(words)
     words.shift(1)
-    words
+    if words.length == 0
+      nil
+    else
+      words
+    end
   end
 
   private
   def create_type(type)
-    type_name = type.capitalize + "Task"
     task = nil
     begin
+      type_name = type.capitalize + "Task"
       task = Object::const_get(type_name).new(@manager)
     rescue
 

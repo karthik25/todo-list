@@ -16,6 +16,14 @@ class DeleteTaskTests
     print_test_result("can delete an item", status)
   end
 
+  def can_delete_all_tasks
+    manager = TextListManager.new(@task_items)
+    deleter = DeleteTask.new(manager)
+    deleter.execute()
+    status = manager.all.length == 0
+    print_test_result("can delete all items", status)
+  end
+
   private
   def print_test_result(msg, status)
     puts("Test: #{msg} - Status: #{status}")
@@ -34,3 +42,4 @@ end
 
 deleter_tests = DeleteTaskTests.new
 deleter_tests.can_delete_a_task_from_global
+deleter_tests.can_delete_all_tasks

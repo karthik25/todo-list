@@ -9,11 +9,12 @@ class ListTask < TaskBase
     end
 
     def has_valid_params
-      @props.length == 0 || @props.length == 1
+      @props == nil || @props.length == 1
     end
 
     def execute
-      category = @props[0]
+      category = nil
+      category = @props[0] if @props != nil
       list_of_tasks = nil
       if category == nil
         list_of_tasks = @manager.all

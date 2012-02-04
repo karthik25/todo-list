@@ -10,7 +10,7 @@ class AddTask < TaskBase
   end
 
   def has_valid_params
-    @props.length == 1 || @props.length == 2
+    @props != nil && (@props.length == 1 || @props.length == 2)
   end
 
   def execute

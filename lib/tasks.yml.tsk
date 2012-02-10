@@ -1,0 +1,43 @@
+--- 
+- !ruby/object:Task 
+  task_added_date: "2012-02-08"
+  task_category: default
+  task_completed_date: "2012-02-08"
+  task_edited_date: 
+  task_id: 1
+  task_name: task 1
+- !ruby/object:Task 
+  task_added_date: "2012-02-08"
+  task_category: cat1
+  task_completed_date: 
+  task_edited_date: 
+  task_id: 2
+  task_name: task 2
+- !ruby/object:Task 
+  task_added_date: "2012-02-08"
+  task_category: new
+  task_completed_date: "2012-02-08"
+  task_edited_date: 
+  task_id: 3
+  task_name: task new
+- !ruby/object:Task 
+  task_added_date: "2012-02-10"
+  task_category: default
+  task_completed_date: "2012-02-10"
+  task_edited_date: 
+  task_id: 4
+  task_name: task 3
+- !ruby/object:Task 
+  task_added_date: "2012-02-10"
+  task_category: default
+  task_completed_date: 
+  task_edited_date: 
+  task_id: 5
+  task_name: test
+- !ruby/object:Task 
+  task_added_date: "2012-02-10"
+  task_category: default
+  task_completed_date: "2012-02-10"
+  task_edited_date: 
+  task_id: 6
+  task_name: test task1

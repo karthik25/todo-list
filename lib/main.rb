@@ -1,14 +1,24 @@
 require './commandprocessor.rb'
 require_relative './core/listmanager/text_list_manager.rb'
+require_relative './core/listmanager/yaml_list_manager.rb'
 require_relative './core/classes/Task.rb'
 require_relative './core/tasks/task_base.rb'
 require_relative './core/tasks/help_task.rb'
 
 class Main
-  attr_reader :list_manager, :cmd_processor
+  attr_reader :list_manager, :cmd_processor, :manager_type_id
+
+  def initialize(manager_type)
+    # cannot just do manager_type_id = manager_type for simple data types
+    setmanagertype(manager_type)
+  end
 
   def setup
-    @list_manager = TextListManager.new(nil)
+    if (@manager_type_id == 1)
+      @list_manager = TextListManager.new(nil)
+    else
+      @list_manager = YamlListManager.new(nil)
+    end
     @cmd_processor = Commandprocessor.new(@list_manager)
   end
 
@@ -46,8 +56,13 @@ class Main
 
     array
   end
+
+  private
+  def setmanagertype(value)
+    @manager_type_id = value
+  end
 end
 
-main = Main.new
+main = Main.new(2)
 main.setup
 main.start

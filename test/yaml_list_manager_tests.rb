@@ -1,13 +1,13 @@
 require_relative '../lib/core/classes/task.rb'
 require_relative '../lib/core/listmanager/base_list_manager.rb'
-require_relative '../lib/core/listmanager/text_list_manager.rb'
+require_relative '../lib/core/listmanager/yaml_list_manager.rb'
 
-class TextListManagerTests
+class YamlListManagerTests
   def initialize
     array = get_dummy_tasks
 
     @task_items = array
-    @manager = TextListManager.new(@task_items)
+    @manager = YamlListManager.new(@task_items)
   end
 
   def test_all_items
@@ -77,7 +77,7 @@ class TextListManagerTests
   end
 end
 
-manager = TextListManagerTests.new
+manager = YamlListManagerTests.new
 manager.test_all_items
 manager.test_get_one_item
 manager.test_if_cat1_has_2_items
